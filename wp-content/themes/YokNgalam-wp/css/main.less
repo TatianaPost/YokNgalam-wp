@@ -1,0 +1,84 @@
+@import 'elements.less';
+
+/* Your Custom code here */
+
+.wrapper {
+  max-width:1230px;
+  width:86%;
+  margin-left:9%;
+  margin-right:5%;
+}
+
+/*Header styles*/
+
+.top_header {
+  height:122px;
+  line-height: 122px;
+
+  .wrapper {
+    overflow:hidden;
+
+    .logo_section {
+      width:40%;
+      float:left;
+    }
+
+    .top_navigation {
+      width:50%;
+      float:left;
+
+      .ale_headermenu {
+        display:inline-block;
+
+        &::after {
+          content:'';
+
+        }
+
+        .menu-item {
+          line-height:48px;
+          height:48px;
+          display:inline-block;
+          border:2px solid transparent;
+          .rounded(24px);
+          min-width:80px;
+          .transition(all 300ms ease-in-out);
+
+          &:hover {
+            border-color: #fff;
+            .transition(all 300ms ease-in-out);
+          }
+
+          a {
+            font-family: "Lato Medium";
+            font-size:14px;
+            color:#fff;
+            padding:20px;
+          }
+        }
+      }
+    }
+    .wrapper_avatar {
+
+      .avatar {
+        width: 44px;
+        height: 44px;
+        background: yellow url('img/avatar.png') no-repeat center;
+        .rounded(22px);
+        display: inline-block;
+        margin-top:36px;
+        position:relative;
+
+        &::after {
+          content:'\f0d7';
+          font: normal normal normal 14px/1 FontAwesome;
+          position:absolute;
+          right:-16px;
+          top:16px;
+          color:#fff;
+          cursor:pointer;
+        }
+      }
+    }
+  }
+}
